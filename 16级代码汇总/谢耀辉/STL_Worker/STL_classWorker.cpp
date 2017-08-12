@@ -9,7 +9,7 @@
 #include <iostream>
 #include <string>
 #include <list>
-#include<stdlib.h>
+
 #include "Worker.h"
 #include "vlist.h"
 
@@ -29,7 +29,8 @@ int main()
 	}
 	printf("删除Alice后：\n");
 	list<Worker>::iterator list_iter = s1.begin();
-
+	Worker Alice = p[0];
+	s1.remove(Alice);
 	for (list_iter = s1.begin(); list_iter != s1.end(); list_iter++)
 		list_iter->Display();
 	printf("添加两个数据：\n");
