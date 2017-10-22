@@ -6,9 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>770</width>
-    <height>554</height>
+    <width>982</width>
+    <height>648</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>720</width>
+    <height>480</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Widget</string>
@@ -16,11 +22,17 @@
   <widget class="QLabel" name="labelShow">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>20</y>
-     <width>731</width>
-     <height>431</height>
+     <x>0</x>
+     <y>10</y>
+     <width>941</width>
+     <height>501</height>
     </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
    </property>
    <property name="text">
     <string/>
@@ -29,9 +41,9 @@
   <widget class="QPushButton" name="ButtonOpenPic">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>490</y>
-     <width>85</width>
+     <x>40</x>
+     <y>550</y>
+     <width>88</width>
      <height>26</height>
     </rect>
    </property>
@@ -42,8 +54,8 @@
   <widget class="QPushButton" name="ButtonOpenMov">
    <property name="geometry">
     <rect>
-     <x>284</x>
-     <y>490</y>
+     <x>550</x>
+     <y>550</y>
      <width>101</width>
      <height>26</height>
     </rect>
@@ -55,8 +67,8 @@
   <widget class="QPushButton" name="ButtonStart">
    <property name="geometry">
     <rect>
-     <x>460</x>
-     <y>490</y>
+     <x>710</x>
+     <y>550</y>
      <width>85</width>
      <height>26</height>
     </rect>
@@ -68,8 +80,8 @@
   <widget class="QPushButton" name="ButtonStop">
    <property name="geometry">
     <rect>
-     <x>610</x>
-     <y>490</y>
+     <x>850</x>
+     <y>550</y>
      <width>85</width>
      <height>26</height>
     </rect>
@@ -81,14 +93,79 @@
   <widget class="QSlider" name="horizontalSlider">
    <property name="geometry">
     <rect>
-     <x>290</x>
-     <y>520</y>
-     <width>401</width>
+     <x>550</x>
+     <y>600</y>
+     <width>391</width>
      <height>22</height>
     </rect>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ButtonTurnLeft">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>550</y>
+     <width>88</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>左转90度</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ButtonTurnRight">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>550</y>
+     <width>88</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>右转90度</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ButtonTurn_LtoR">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>600</y>
+     <width>88</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>左右镜像</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ButtonZoomIn">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>600</y>
+     <width>88</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>缩小</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ButtonZoomOut">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>600</y>
+     <width>88</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>放大</string>
    </property>
   </widget>
  </widget>

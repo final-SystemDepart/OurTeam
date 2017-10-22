@@ -65,7 +65,8 @@ void Widget::ClearOldShow()
   m_bIsPlaying = false;
 }
 
-void Widget::on_ButtonOpenPic_clicked()  //打开图片
+//打开图片
+void Widget::on_ButtonOpenPic_clicked()
 {
   QString strFileName;    //文件名
   strFileName = QFileDialog::getOpenFileName(this, tr("打开图片"), "",
@@ -96,7 +97,8 @@ void Widget::on_ButtonOpenPic_clicked()  //打开图片
     }
 }
 
-void Widget::on_ButtonOpenMov_clicked()    //打开动态图
+//打开动态图
+void Widget::on_ButtonOpenMov_clicked()
 {
   QString strFileName = QFileDialog::getOpenFileName(this, tr("打开动态图片"), "",
                                                      "Movies (*.gif);;All files(*)");
@@ -148,7 +150,8 @@ void Widget::on_ButtonOpenMov_clicked()    //打开动态图
     }
 }
 
-void Widget::on_ButtonStart_clicked()    //开始播放
+//开始播放
+void Widget::on_ButtonStart_clicked()
 {
   //不是动态图
   if ( !m_bIsMovie )
@@ -165,7 +168,8 @@ void Widget::on_ButtonStart_clicked()    //开始播放
 
 }
 
-void Widget::on_ButtonStop_clicked()    //停止播放
+//停止播放
+void Widget::on_ButtonStop_clicked()
 {
   if ( !m_bIsMovie )
     return;
@@ -191,4 +195,38 @@ void Widget::RecvPlayError(QImageReader::ImageReaderError error)
 void Widget::RecvFrameNumber(int frameNumber)
 {
   ui->horizontalSlider->setValue(frameNumber);
+}
+
+//图片缩放
+void Widget::on_ButtonZoomIn_clicked()
+{
+
+}
+
+void Widget::on_ButtonZoomOut_clicked()
+{
+
+}
+
+//左右镜像
+void Widget::on_ButtonTurn_LtoR_clicked()
+{
+
+}
+
+//图像旋转
+void Widget::on_ButtonTurnLeft_clicked()
+{
+
+}
+
+void Widget::on_ButtonTurnRight_clicked()
+{
+
+}
+
+//更新图像
+void Widget::ImgUpdate()
+{
+
 }

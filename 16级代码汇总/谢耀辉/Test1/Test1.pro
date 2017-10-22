@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2017-08-12T06:50:08
+# Project created by QtCreator 2017-08-06T12:39:02
 #
 #-------------------------------------------------
 
@@ -8,7 +8,7 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = PictureView_Beta
+TARGET = Test1
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use

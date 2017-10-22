@@ -33,6 +33,16 @@ private slots:
 
   void on_ButtonStop_clicked();
 
+  void on_ButtonZoomIn_clicked();
+
+  void on_ButtonZoomOut_clicked();
+
+  void on_ButtonTurn_LtoR_clicked();
+
+  void on_ButtonTurnLeft_clicked();
+
+  void on_ButtonTurnRight_clicked();
+
 private:
   Ui::Widget *ui;
 
@@ -44,7 +54,8 @@ private:
   bool m_bIsMovie;
   //动态图是否在播放
   bool m_bIsPlaying;
-
+  //更新图像
+  void ImgUpdate();
   //清除函数，打开新图之前清除旧图
   void ClearOldShow();
 };
